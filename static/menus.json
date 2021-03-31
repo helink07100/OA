@@ -1,0 +1,310 @@
+[
+  {
+    "label": "我的",
+    "icon": "iconfont icon-wode1",
+    "children": [
+      {
+        "label": "我的",
+        "icon": "iconfont icon-wode1",
+        "children": [
+          {
+            "label": "我的申请",
+            "icon": "",
+            "path": "/myflow/record_list",
+            "ct": "myflow",
+            "ac": "record_list",
+            "display": 1
+          },
+          {
+            "label": "新增申请",
+            "icon": "",
+            "path": "/myflow/apply",
+            "ct": "myflow",
+            "ac": "apply",
+            "display": 0
+          },
+          {
+            "label": "我的审批",
+            "icon": "",
+            "path": "/myflow/approve_list",
+            "ct": "myreview",
+            "ac": "approve_list",
+            "display": 1
+          },
+          {
+            "label": "抄送我的",
+            "icon": "",
+            "path": "/myflow/cc_list",
+            "ct": "myreview",
+            "ac": "cc_list",
+            "display": 1
+          },
+          {
+            "label": "查看事务数据",
+            "icon": "",
+            "path": "/myflow/record_detailed",
+            "ct": "myflow",
+            "ac": "record_detailed",
+            "display": 0
+          },
+          {
+            "label": "我的传阅",
+            "icon": "",
+            "path": "/circulate",
+            "ct": "circulate",
+            "ac": "index",
+            "display": 1
+          },
+          {
+            "label": "传阅详情",
+            "icon": "",
+            "path": "/circulate/detail",
+            "ct": "circulate",
+            "ac": "detail",
+            "display": 0
+          },
+          {
+            "label": "新增传阅",
+            "icon": "",
+            "path": "/circulate/add",
+            "ct": "circulate",
+            "ac": "add",
+            "display": 0
+          },
+          {
+            "label": "我的日程",
+            "path": "/schedule/lists",
+            "ct": "schedule",
+            "ac": "lists",
+            "display": 1
+          },
+          {
+            "label": "我的收文",
+            "path": "/document/received",
+            "ct": "document",
+            "ac": "received",
+            "display": 1
+          },
+          {
+            "label": "公告详情",
+            "path": "/document/detail",
+            "ct": "document",
+            "ac": "detail",
+            "display": 0
+          },
+          {
+            "label": "我的消息",
+            "path": "/message",
+            "ac": "index",
+            "ct": "message",
+            "display": 1
+          },
+          {
+            "label": "我的主页",
+            "icon": "",
+            "path": "/",
+            "ct": "portal",
+            "ac": "index",
+            "display": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "通知公告",
+    "icon": "iconfont icon-gongwen",
+    "children": [
+      {
+        "label": "公告",
+        "icon": "iconfont icon-gongwenguanli",
+        "children": [
+          {
+            "label": "机构内公告",
+            "path": "/document/published",
+            "ac": "published",
+            "ct": "document",
+            "display": 1
+          },
+          {
+            "label": "公告属性",
+            "path": "/document/doc_type",
+            "ac": "index",
+            "ct": "doc_type",
+            "display": 1
+          },
+          {
+            "label": "新增公告",
+            "path": "/document/add",
+            "ac": "add",
+            "ct": "document",
+            "display": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "流程",
+    "icon": "iconfont icon-liucheng1",
+    "children": [
+      {
+        "label": "流程管理",
+        "icon": "iconfont icon-liucheng1",
+        "children": [
+          {
+            "label": "新增流程",
+            "path": "/form/add",
+            "ac": "add",
+            "ct": "form",
+            "display": 0
+          },
+          {
+            "label": "流程列表",
+            "path": "/form",
+            "ac": "index",
+            "ct": "form",
+            "display": 1
+          },
+          {
+            "label": "流程类型",
+            "path": "/form/form_type",
+            "ac": "index",
+            "ct": "form_type",
+            "display": 1
+          },
+          {
+            "label": "审批流程",
+            "path": "/form/flow_edit",
+            "ct": "flow",
+            "ac": "edit",
+            "display": 0
+          },
+          {
+            "label": "新增条件",
+            "path": "/form/flow_condition",
+            "ct": "flow",
+            "ac": "more_condition",
+            "display": 0
+          },
+          {
+            "label": "预览表单",
+            "path": "/form/form_view",
+            "ct": "form",
+            "ac": "view",
+            "display": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "系统",
+    "icon": "el-icon-setting",
+    "children": [
+      {
+        "label": "个人中心",
+        "icon": "iconfont icon-gerenzhongxin mr-ss ml-6",
+        "children": [
+          {
+            "label": "修改密码",
+            "path": "/admin/editpwd",
+            "ac": "editpwd",
+            "ct": "admin",
+            "display": 1
+          },
+          {
+            "label": "个人资料",
+            "path": "/admin/mypurview",
+            "ac": "mypurview",
+            "ct": "admin",
+            "display": 1
+          }
+        ]
+      },
+      {
+        "label": "用户管理",
+        "icon": "iconfont icon-yonghuguanli mr-ss ml-6",
+        "children": [
+          {
+            "label": "管理员管理",
+            "path": "/admin",
+            "ac": "index",
+            "ct": "admin",
+            "display": 1
+          },
+          {
+            "label": "添加管理员",
+            "path": "/admin/add",
+            "ac": "add",
+            "ct": "admin",
+            "display": 0
+          },
+          {
+            "label": "修改管理员",
+            "path": "/admin/edit",
+            "ac": "edit",
+            "ct": "admin",
+            "display": 0
+          },
+          {
+            "label": "普通员工管理",
+            "path": "/admin/index_base",
+            "ac": "index_base",
+            "ct": "admin",
+            "display": 1
+          },
+          {
+            "label": "用户组管理",
+            "path": "/admin/group",
+            "ac": "index",
+            "ct": "admin_group",
+            "display": 1
+          },
+          {
+            "label": "用户组添加",
+            "path": "/admin/group/add",
+            "ac": "add",
+            "ct": "admin_group",
+            "display": 0
+          },
+          {
+            "label": "用户组编辑",
+            "path": "/admin/group/edit",
+            "ac": "edit",
+            "ct": "admin_group",
+            "display": 0
+          },
+          {
+            "label": "操作日志",
+            "path": "/admin/oplog",
+            "ac": "oplog",
+            "ct": "admin",
+            "display": 1
+          },
+          {
+            "label": "登录日志",
+            "path": "/admin/login_log",
+            "ac": "login_log",
+            "ct": "admin",
+            "display": 1
+          }
+        ]
+      },
+      {
+        "label": "系统管理",
+        "icon": "el-icon-setting",
+        "children": [
+          {
+            "label": "菜单管理",
+            "icon": "",
+            "path": "/setting/menu",
+            "ct": "debug",
+            "ac": "show_log",
+            "display": 1
+          }
+        ]
+      }
+    ]
+  }
+]

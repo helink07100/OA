@@ -1,0 +1,248 @@
+.el-button {
+  height: 32px;
+  min-width: 110px;
+  border-radius: 2px !important;
+
+  &.is-round {
+    padding: 9px 19px;
+  }
+}
+
+.el-input {
+  .el-input__icon {
+    line-height: 1;
+  }
+  .el-input__suffix {
+    top: -2px;
+  }
+
+  .el-input__inner::-webkit-input-placeholder {
+    color: #afb1b3;
+  }
+}
+
+.el-checkbox__inner {
+  width: 16px !important;
+  height: 16px !important;
+
+  &::after {
+    left: 5px !important;
+    top: 2px !important;
+  }
+
+  &::before {
+    top: 6px !important;
+  }
+}
+
+.el-select__tags-text {
+  display: inline-block;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.el-select .el-select__tags-text + .el-tag__close.el-icon-close {
+  top: -7px;
+}
+
+.approver-popover-style {
+  padding: 0 10px !important;
+}
+
+.el-form {
+  /deep/.el-input__inner {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    color: #333;
+  }
+
+  /deep/.ql-editor {
+    color: #333;
+  }
+
+  &.el-form--inline {
+    /deep/.el-form-item__content,
+    /deep/.el-form-item__label {
+      line-height: 30px;
+    }
+    /deep/.el-input__inner {
+      height: 30px;
+      line-height: 30px;
+      border-radius: 2px;
+    }
+
+    /deep/.el-button {
+      padding: 7px 19px;
+      color: #2086f9;
+    }
+  }
+
+  .el-select.w100 {
+    width: 100%;
+  }
+}
+
+.el-dialog__header {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px !important;
+  background: #f6f7fb;
+  .el-dialog__title {
+    font-size: 16px;
+  }
+  .el-dialog__headerbtn {
+    top: 9px;
+  }
+}
+
+.layout-side {
+  padding-top: 30px;
+  .el-submenu {
+    .el-submenu__title {
+      position: relative;
+      padding-left: 36px !important;
+      font-size: 18px;
+      height: 60px;
+
+      i {
+        margin-right: 10px;
+        &.icon-zhaopinguanli {
+          margin-left: 0px !important;
+          font-size: 24px;
+        }
+      }
+    }
+
+    &.is-active {
+      color: #4d86fb;
+
+      .el-submenu__title {
+        color: #5b93ff !important;
+
+        &::before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 6px;
+          height: 100%;
+          background: #3f78f6;
+        }
+
+        i {
+          color: #3f78f6;
+        }
+      }
+
+      span {
+        color: #3f78f6;
+        &::after {
+          background-color: #3f78f6;
+        }
+      }
+    }
+
+    .el-menu-item {
+      padding: 0 0 0 84px !important;
+
+      &.is-active {
+        background-color: #fff;
+        span {
+          color: #3f78f6;
+          &::after {
+            background-color: #3f78f6;
+          }
+        }
+      }
+
+      span {
+        position: relative;
+        color: #858da5;
+
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          left: -15px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 4px;
+          height: 4px;
+          background-color: #6e768e;
+        }
+      }
+    }
+  }
+}
+
+// 表格样式
+.el-table {
+  .text-danger {
+    color: #ff4439 !important;
+  }
+}
+
+.organization-box {
+  .el-checkbox__inner {
+    border-radius: 50% !important;
+  }
+}
+
+//表格分页
+.table-footer .el-input--mini .el-input__icon {
+  line-height: 26px;
+}
+
+// 下拉多选
+.el-select .el-select__tags .el-tag {
+  padding: 0 10px;
+  background: rgba(63, 120, 246, 0.1);
+  border-radius: 2px;
+  color: #3f78f6;
+  border: none;
+  height: 26px;
+  line-height: 26px;
+
+  .el-icon-close {
+    top: -8px;
+    color: #3f78f6 !important;
+    background-color: transparent !important;
+  }
+}
+
+// 表单详情
+.el-form-item__content {
+  color: #333333;
+}
+
+.el-form-item .el-form-item__label {
+  padding-right: 20px;
+}
+
+.el-button--primary.is-plain {
+  background-color: #fff !important;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: #3f78f6 !important;
+  }
+}
+
+.left-switch > div {
+  left: -35px;
+}
+
+.el-radio {
+  font-size: 16px;
+
+  .el-radio__inner {
+    width: 16px;
+    height: 16px;
+  }
+}

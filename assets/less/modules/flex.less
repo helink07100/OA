@@ -1,0 +1,87 @@
+.flex {
+  display: flex;
+}
+
+.f1 {
+  flex: 1;
+}
+
+@flex-size: {
+  1: 1 !important;
+  3: 3 !important;
+  6: 6 !important;
+};
+
+each(@flex-size, {
+    .f@{key} {
+      flex: @value;
+    }
+}) .fx-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fx-jstart {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-flow: row wrap;
+}
+
+.fl-jend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fx-astart {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.fx-aend {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.fx-allstart {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.fx-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fx-bstart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.fx-dcenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fx-dastart {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.fx-deend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}

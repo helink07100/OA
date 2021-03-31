@@ -1,0 +1,106 @@
+  // 隐藏区块模块特殊处理
+  .drag-block {
+    position: relative;
+    border: 1px solid #e3e8f4;
+
+    .drag-con {
+      padding: 0 130px;
+      height: 100%;
+    }
+
+    /deep/.el-form-item__content {
+      display: flex;
+
+      &>div:nth-child(1):not(.block-header),
+      &>div:nth-child(3):not(.option) {
+        flex: 1;
+      }
+
+      .el-form-item+.el-form-item {
+        flex: 1.6;
+      }
+    }
+
+    /deep/.option {
+      width: 230px;
+
+      span {
+        padding-left: 15px;
+        cursor: pointer;
+      }
+    }
+
+    /deep/&>.el-form-item__content {
+      margin-left: 0 !important;
+      display: block;
+
+      .block-header {
+        padding-left: 20px;
+        background: #ebeef5;
+        height: 40px;
+      }
+
+      .el-form-item__content {
+        margin-bottom: 22px;
+      }
+
+      &>.option {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    /deep/.block-con {
+      position: relative;
+      min-height: 50px;
+
+      &>.drag-con {
+        padding: 0;
+        min-height: 40px;
+
+        &>span {
+          display: block;
+          position: relative;
+          padding-top: 22px;
+          min-height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .border-bottom {
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #e3e8f4;
+
+    .inline {
+      position: relative;
+      margin: auto;
+      display: inline-block;
+      text-align: center;
+      line-height: 40px;
+
+      span {
+        padding: 0 15px;
+        position: relative;
+        z-index: 1;
+        background: #fff;
+      }
+
+      &:after {
+        position: absolute;
+        top: 20px;
+        left: -30px;
+        right: 0;
+        margin: auto;
+        display: block;
+        content: '';
+        width: calc(100% + 60px);
+        height: 1px;
+        background: #e3e8f4;
+      }
+    }
+  }

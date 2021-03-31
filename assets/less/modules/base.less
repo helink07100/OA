@@ -1,0 +1,177 @@
+@fontsize: {
+  twelve: 12px !important;
+  fourteen: 14px !important;
+  sixteen: 16px !important;
+  eighteen: 18px !important;
+};
+
+each(@fontsize, {
+    .fs-@{key} {
+      font-size: @value;
+    }
+  }
+
+) .cp {
+  cursor: pointer;
+}
+
+[none],
+.none {
+  display: none;
+}
+
+[v-cloak],
+[hidden],
+.hidden {
+  visibility: hidden;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.cf::after,
+.cf::before {
+  content: '';
+  display: table;
+}
+
+.cf::after {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+}
+
+.editor-style .ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-color: #e3e8f4;
+}
+
+.editor-style .ql-toolbar.ql-snow {
+  padding: 0 8px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-color: #e3e8f4;
+  background-color: #f9fafc !important;
+}
+
+.quill-editor .ql-snow .ql-picker {
+  line-height: 24px;
+}
+
+.ver-top {
+  vertical-align: top;
+}
+
+.control-form-flex {
+  & > .el-form-item__content {
+    flex: 1;
+    display: flex;
+
+    & > .el-input,
+    & > .detail-control-item {
+      flex: 1;
+    }
+  }
+}
+
+.layout-page {
+  .header .right .el-button {
+    border-radius: 2px;
+  }
+}
+
+//滚动条凹槽的颜色，还可以设置边框属性
+::-webkit-scrollbar-track-piece {
+  background-color: #f8f8f8;
+}
+//滚动条的宽度
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+//滚动条的设置
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dddddd;
+  background-clip: padding-box;
+  min-height: 28px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.el-menu.el-menu--collapse .el-submenu {
+  margin-bottom: 40px;
+  position: relative;
+  width: @layout-side-collapse-width !important;
+  .el-submenu__title {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background-color: #fff !important;
+    font-size: 12px;
+    text-align: center;
+
+    i:first-child {
+      display: flex;
+      align-items: start;
+      display: block;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      line-height: 1;
+      font-size: 24px;
+    }
+
+    &::before {
+      height: 24px !important;
+    }
+
+    span {
+      margin-top: 10px;
+      display: block !important;
+      width: 100%;
+      line-height: 1;
+    }
+
+    .el-submenu__icon-arrow {
+      display: none;
+    }
+  }
+}
